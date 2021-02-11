@@ -61,12 +61,12 @@
         
         <!-- Code goes here -->
         
-        <div class="max-w-xl text-black-600 leading-6 font-large">
+        <div class="max-w-xl text-black-600 leading-8 font-large">
           <p x-show="country === 'gb' || country === 'ie'">Send SMS with our PHP API</p>
           <p x-cloak x-show="country === 'es'">Envía SMS con nuestra API PHP</p>
         </div>
         
-        <div class="max-w-xl text-gray-500 leading-6 font-medium">
+        <div class="text-gray-500 leading-6 font-medium">
             <p x-show="country === 'gb' || country === 'ie'">Refer to the code below to see how easily you can integrate our SMS API with your own software, CRM application or website in a language you already use.</p>
             <p x-cloak x-show="country === 'es'">Consulte el có&aacute;digo a continuación para ver con qué facilidad puede integrar nuestra API de SMS con su propio software, aplicación CRM o sitio web en un idioma que ya usa.</p>
         </div>
@@ -76,6 +76,20 @@
           <p x-cloak x-show="country === 'es'"><a href="#" target="_blank">Lea nuestra documentación API complete</a></p>
         <div>  
         
+       <div x-data="{ tab: 'one' }">
+        <button @click="tab = 'one'">Post</button>
+        <div x-show="tab === 'one'">
+          <!-- Tab One -->
+       </div>
+        <button>Get</button>
+        <div>
+          <!-- Tab Two -->
+        </div>
+        <button>Class</button>
+        <div>
+          <!-- Tab Three -->
+        </div>
+      </div>
       
       </article>
     </main>
