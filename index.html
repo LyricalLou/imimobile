@@ -62,15 +62,18 @@
         <!-- Code goes here -->
         
         <div class="max-w-xl text-black-600 leading-6 font-large">
-        <p>Send SMS with our PHP API</p>
+          <p x-show="country === 'gb' || country === 'ie'">Send SMS with our PHP API</p>
+          <p x-cloak x-show="country === 'es'">Envía SMS con nuestra API PHP</p>
         </div>
         
         <div class="max-w-xl text-gray-500 leading-6 font-medium">
-        <p>Refer to the code below to see how easily you can integrate our SMS API with your own software, CRM application or website in a language you already use.</p>
+            <p x-show="country === 'gb' || country === 'ie'">Refer to the code below to see how easily you can integrate our SMS API with your own software, CRM application or website in a language you already use.</p>
+            <p x-cloak x-show="country === 'es'">Consulte el có&aacute;digo a continuación para ver con qué facilidad puede integrar nuestra API de SMS con su propio software, aplicación CRM o sitio web en un idioma que ya usa.</p>
         </div>
         
         <div class="max-w-xl text-gray-500 leading-6 font-medium">
-          <p><a href="#" target="_blank">Read our full API documentation</a></p>
+          <p x-show="country === 'gb' || country === 'ie'"><a href="#" target="_blank">Read our full API documentation</a></p>
+          <p x-cloak x-show="country === 'es'"><a href="#" target="_blank">Lea nuestra documentación API complete</a></p>
         <div>  
         
       
