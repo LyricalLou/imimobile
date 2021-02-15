@@ -61,37 +61,37 @@
         
         <!-- Code goes here -->
         
-        <div class="text-2xl text-black-600 leading-6">
+        <div class="text-2xl text-black-600">
           <p x-show="country === 'gb' || country === 'ie'">Send SMS with our PHP API</p>
           <p x-cloak x-show="country === 'es'">Envía SMS con nuestra API PHP</p>
         </div>
         
-        <div class="text-base text-gray-500 leading-6 mt-20">
+        <div class="text-base text-gray-500 mt-4">
             <p x-show="country === 'gb' || country === 'ie'">Refer to the code below to see how easily you can integrate our SMS API with your own software, CRM application or website in a language you already use.</p>
             <p x-cloak x-show="country === 'es'">Consulte el có&aacute;digo a continuación para ver con qué facilidad puede integrar nuestra API de SMS con su propio software, aplicación CRM o sitio web en un idioma que ya usa.</p>
         </div>
         
-        <div class="text-sm text-gray-500 leading-6 underline mt-8">
+        <div class="text-sm text-gray-500 underline mt-4">
           <p x-show="country === 'gb' || country === 'ie'"><a href="#" target="_blank">Read our full API documentation <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8.33334 4.99999H5.00001C4.55798 4.99999 4.13406 5.17559 3.8215 5.48815C3.50894 5.80071 3.33334 6.22463 3.33334 6.66666V15C3.33334 15.442 3.50894 15.8659 3.8215 16.1785C4.13406 16.4911 4.55798 16.6667 5.00001 16.6667H13.3333C13.7754 16.6667 14.1993 16.4911 14.5119 16.1785C14.8244 15.8659 15 15.442 15 15V11.6667M11.6667 3.33333H16.6667M16.6667 3.33333V8.33333M16.6667 3.33333L8.33334 11.6667" stroke="#71717A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg></a></p>
           <p x-cloak x-show="country === 'es'"><a href="#" target="_blank">Lea nuestra documentación API complete</a></p>
         <div>  
         
-       <div class="mt-40 bg-white text-gray-900 rounded-full outline-gray" x-data="{ tab: 'one' }">
-        <button @click="tab = 'one'" class "bg-white text-blue-500 rounded-full hover:text-blue-500">Post</button>
+       <div class="mt-6 bg-white text-gray-900 rounded-full" x-data="{ tab: 'one' }">
+        <button @click="tab = 'one'" class="bg-white text-gray-900 rounded-full mr-2 py-2 px-4" :class="{ 'bg-white text-blue-500 rounded-full mr-2 py-2 px-4': tab === 'one' }">Post</button>
         <div x-show="tab === 'one'">
-          <p>show this text for Post</p> 
+          <p class="font-mono align-left bg-gray-100">show this text for Post</p> <!-- partials/php/post.html -->
           <!-- Tab One -->
        </div>
-        <button @click="tab = 'two'" class "bg-white text-blue-500 rounded-full hover:text-blue-500">Get</button>
+        <button @click="tab = 'two'" class="bg-white text-gray-900 rounded-full mr-2 py-2 px-4" :class="{ 'bg-white text-blue-500 rounded-full mr-2 py-2 px-4': tab === 'two' }">Get</button>
         <div x-show="tab === 'two'">
-          <p>Show this text for Get</p>
+          <p class="font-mono align-left bg-gray-100">Show this text for Get</p> <!-- partials/php/get.html -->
           <!-- Tab Two -->
         </div>
-        <button @click="tab = 'three'" class "bg-white text-blue-500 rounded-full hover:text-blue-500">Class</button>
+        <button @click="tab = 'three'" class="bg-white text-gray-900 rounded-full mr-2 py-2 px-4" :class="{ 'bg-white text-blue-500 rounded-full mr-2 py-2 px-4': tab === 'three' }">Class</button>
         <div x-show="tab === 'three'">
-          <p>Show this text for Class</p>
+          <p class="font-mono align-left bg-gray-100">Show this text for Class</p> <!-- partials/php/class.html -->
           <!-- Tab Three -->
         </div>
       </div>
